@@ -5,11 +5,16 @@ app = Flask(__name__)
 def index():
     titolo="Pagina iniziale"
     testo="Ciao mondo!"
+<<<<<<< HEAD
     bottone="Più info"
     return render_template("base.html" ,
              titolo=titolo,
              testo=testo,
              bottone=bottone)   
+=======
+    bottone
+    return "Ciao mondo!"
+>>>>>>> blocks
 
 @app.route('/info')
 def info():
