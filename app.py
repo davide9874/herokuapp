@@ -10,5 +10,6 @@ def index():
 def info():
     scritta="informazioni
     return render_template("base.html" , testo=scritta) 
+    
 if __name__ == '__main__':
     app.run()
