@@ -3,29 +3,22 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    titolo="Pagina iniziale"
+    titolo="pagina iniziale"
+    bottone="più info"
     testo="Ciao mondo!"
-<<<<<<< HEAD
-    bottone="Più info"
-    return render_template("base.html" ,
-             titolo=titolo,
-             testo=testo,
-             bottone=bottone)   
-=======
-    bottone
-    return "Ciao mondo!"
->>>>>>> blocks
+    return render_template("index.html", 
+            titolo=titolo,
+            testo=testo,
+            bottone=bottone)
 
 @app.route('/info')
 def info():
-    titolo="Pagina info"
-    testo="Informazioni"
+    titolo="pagina info"
     bottone="Homepage"
-    return render_template("base.html" ,
-           titolo=titolo,
-           testo=testo,
-           bottone=bottone)
+    testo="informazioni"
+    return render_template("info.html", 
+            titolo=titolo,
+            testo=testo) 
 
-    
 if __name__ == '__main__':
     app.run()
