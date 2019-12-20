@@ -3,6 +3,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    titolo="Pagina iniziale"
+    testo="Ciao mondo!"
+    bottone
     return "Ciao mondo!"
 
 @app.route('/info')
